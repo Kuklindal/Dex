@@ -1,0 +1,14 @@
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\bin\Debug\net8.0\DexScreener.exe
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\bin\Debug\net8.0\DexScreener.deps.json
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\bin\Debug\net8.0\DexScreener.runtimeconfig.json
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\bin\Debug\net8.0\DexScreener.dll
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\bin\Debug\net8.0\DexScreener.pdb
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\net8.0\DexScreener.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\net8.0\DexScreener.AssemblyInfoInputs.cache
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\net8.0\DexScreener.AssemblyInfo.cs
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\net8.0\DexScreener.csproj.CoreCompileInputs.cache
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\net8.0\DexScreener.dll
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\net8.0\refint\DexScreener.dll
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\net8.0\DexScreener.pdb
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\net8.0\DexScreener.genruntimeconfig.cache
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\net8.0\ref\DexScreener.dll
