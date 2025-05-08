@@ -1,0 +1,4 @@
+/app/publish/DexScreener
+/app/publish/DexScreener.dll
+/app/publish/DexScreener.deps.json
+/app/publish/DexScreener.runtimeconfig.json
