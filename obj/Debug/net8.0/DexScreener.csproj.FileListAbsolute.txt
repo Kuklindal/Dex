@@ -12,3 +12,4 @@ C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\ne
 C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\net8.0\DexScreener.pdb
 C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\net8.0\DexScreener.genruntimeconfig.cache
 C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\net8.0\ref\DexScreener.dll
+C:\Users\79025\source\repos\2 курс\3 семестр\DexScreener\obj\Debug\net8.0\DexScreener.sourcelink.json

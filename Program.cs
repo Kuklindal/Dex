@@ -60,7 +60,7 @@ class Program
                     }
 
                     var difference = CalculatePriceDifference(prices[0], prices[1]);
-                    Console.WriteLine($"Current difference: {difference:F2}% (Threshold: {thresholdPercentage}%)");
+                    //Console.WriteLine($"Current difference: {difference:F2}% (Threshold: {thresholdPercentage}%)");
 
                     if (difference >= thresholdPercentage && !prevAlertSent)
                     {
