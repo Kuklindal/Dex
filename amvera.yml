@@ -7,6 +7,6 @@ build:
   image: mcr.microsoft.com/dotnet/sdk:8.0
 run:
   image: mcr.microsoft.com/dotnet/sdk:8.0
-  buildFileName: DexScreener.dll
+  buildFileName: /bin/Debug/net8.0/DexScreener.dll
   persistenceMount: /data
   containerPort: 80
