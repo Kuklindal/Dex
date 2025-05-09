@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DexScreener")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f01b7bb74a1d5427f03bc58d67322e9af42712f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c6d0bfadf8a248cd0bbada87ead28dbd6c8db58")]
 [assembly: System.Reflection.AssemblyProductAttribute("DexScreener")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DexScreener")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

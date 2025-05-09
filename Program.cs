@@ -17,13 +17,13 @@ class Program
         ("bsc", "0xC6585bc17b53792f281a9739579DD60535c1F9FB")
     };
 
-    private static double thresholdPercentage = 5.0; // Default threshold
+    private static double thresholdPercentage = 4.0; // Default threshold
     private static long lastUpdateId = 0;
 
     static async Task Main()
     {
         var telegramToken = "7732503206:AAE3c1thGs8MDAv4tYGkt9fFadCxbfap4J4";
-        var chatId = "2673923132";
+        var chatId = "-1002673923132";
 
         if (string.IsNullOrEmpty(telegramToken) || string.IsNullOrEmpty(chatId))
         {
@@ -60,11 +60,11 @@ class Program
                     }
 
                     var difference = CalculatePriceDifference(prices[0], prices[1]);
-                    //Console.WriteLine($"Current difference: {difference:F2}% (Threshold: {thresholdPercentage}%)");
+                    Console.WriteLine($"Current difference: {difference:F2}% (Threshold: {thresholdPercentage}%)");
 
                     if (difference >= thresholdPercentage && !prevAlertSent)
                     {
-                        var message = $"🚨 Price difference alert: {difference:F2}% (Threshold: {thresholdPercentage}%)\n" +
+                        var message = $" Price difference alert: {difference:F2}% (Threshold: {thresholdPercentage}%)\n" +
                                      $"ETH: ${prices[0]:F8}\n" +
                                      $"BSC: ${prices[1]:F8}";
 
@@ -122,12 +122,12 @@ class Program
                                 if (parts.Length == 2 && double.TryParse(parts[1], NumberStyles.Any, CultureInfo.InvariantCulture, out var newThreshold))
                                 {
                                     thresholdPercentage = newThreshold;
-                                    await SendTelegramAlert(token, chat, $"✅ Threshold updated to {newThreshold}%");
+                                    await SendTelegramAlert(token, chat, $" Threshold updated to {newThreshold}%");
                                     Console.WriteLine($"Threshold updated to {newThreshold}%");
                                 }
                                 else
                                 {
-                                    await SendTelegramAlert(token, chat, "❌ Invalid format. Use /setthreshold 5.0");
+                                    await SendTelegramAlert(token, chat, " Invalid format. Use /setthreshold 5.0");
                                 }
                             }
                             else if (text.StartsWith("/getthreshold"))
@@ -208,23 +208,34 @@ class Program
         return Math.Abs((price1 - price2) / ((price1 + price2) / 2)) * 100;
     }
 
-    private static async Task SendTelegramAlert(string token, string chatId, string message)
+    private static async Task<bool> SendTelegramAlert(string token, string chatId, string message)
     {
         try
         {
             var url = $"https://api.telegram.org/bot{token}/sendMessage";
+            var escapedMessage = Uri.EscapeDataString(message);
+
             var content = new FormUrlEncodedContent(new[]
             {
-                new KeyValuePair<string, string>("chat_id", chatId),
-                new KeyValuePair<string, string>("text", message)
-            });
+            new KeyValuePair<string, string>("chat_id", chatId),
+            new KeyValuePair<string, string>("text", message)
+        });
 
             var response = await httpClient.PostAsync(url, content);
-            response.EnsureSuccessStatusCode();
+            var responseBody = await response.Content.ReadAsStringAsync();
+
+            if (!response.IsSuccessStatusCode)
+            {
+                Console.WriteLine($"Telegram API error ({response.StatusCode}): {responseBody}");
+                return false;
+            }
+
+            return true;
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Telegram send error: {ex.Message}");
+            return false;
         }
     }
 }

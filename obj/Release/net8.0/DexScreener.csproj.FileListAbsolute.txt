@@ -1,0 +1,12 @@
+/app/bin/Release/net8.0/DexScreener
+/app/bin/Release/net8.0/DexScreener.deps.json
+/app/bin/Release/net8.0/DexScreener.runtimeconfig.json
+/app/bin/Release/net8.0/DexScreener.dll
+/app/obj/Release/net8.0/DexScreener.GeneratedMSBuildEditorConfig.editorconfig
+/app/obj/Release/net8.0/DexScreener.AssemblyInfoInputs.cache
+/app/obj/Release/net8.0/DexScreener.AssemblyInfo.cs
+/app/obj/Release/net8.0/DexScreener.csproj.CoreCompileInputs.cache
+/app/obj/Release/net8.0/DexScreener.dll
+/app/obj/Release/net8.0/refint/DexScreener.dll
+/app/obj/Release/net8.0/DexScreener.genruntimeconfig.cache
+/app/obj/Release/net8.0/ref/DexScreener.dll

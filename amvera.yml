@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 meta:
   environment: csharp
   toolchain:
@@ -10,3 +11,19 @@ run:
   buildFileName: /bin/Debug/net8.0/DexScreener.dll
   persistenceMount: /data
   containerPort: 80
+=======
+---
+version: null
+meta:
+  environment: csharp
+  toolchain:
+    name: dotnet
+    version: 8.0
+build:
+  image: mcr.microsoft.com/dotnet/sdk:8.0
+run:
+  image: mcr.microsoft.com/dotnet/sdk:8.0
+  buildFileName: DexScreener.dll
+  persistenceMount: /data
+  containerPort: 80
+>>>>>>> 96ec57c4a2b23295c460261c326e5a9c3b0715a2
